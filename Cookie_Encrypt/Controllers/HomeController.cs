@@ -16,7 +16,7 @@ namespace Cookie_Encrypt.Controllers
             // Set Data in Cookie 
             var cookieText = Encoding.UTF8.GetBytes("Text for Cookie");
             var encryptedValue = Convert.ToBase64String(MachineKey.Protect(cookieText, "ProtectCookie"));
-
+            //**// nice
             //--- Create cookie object and pass name of the cookie and value to be stored.
             HttpCookie cookieObject = new HttpCookie("NameOfCookie", encryptedValue);
 
